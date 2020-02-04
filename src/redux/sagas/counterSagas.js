@@ -5,10 +5,8 @@ import { INCREMENT, DECREMENT } from "../actions/actionTypes";
 import { delay } from "redux-saga";
 import { put, takeEvery } from "redux-saga/effects"; // run time saga the same time
 // takeEvery = watch an action changed
-// generator function
-export function* sayHello() {
-  console.log("hello world!..");
-}
+
+// generator function*
 
 function increment() {
   console.log("this is increment saga");
